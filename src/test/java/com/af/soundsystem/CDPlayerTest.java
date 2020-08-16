@@ -15,7 +15,7 @@ public class CDPlayerTest {
     private CompactDisc disc;
 
     @Test
-    public void cdSHouldNotBeNull(){
+    public void cdShouldNotBeNull(){
         Assert.assertNotNull(disc);
     }
 
