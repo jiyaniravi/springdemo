@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'com.af'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework', name: 'spring-core', version: '4.3.14.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.14.RELEASE'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
