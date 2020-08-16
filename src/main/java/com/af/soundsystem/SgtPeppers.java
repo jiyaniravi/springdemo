@@ -2,10 +2,13 @@ package com.af.soundsystem;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Conditional;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
 @Qualifier("SgtPeppers")
+
+@Profile("prod")
 @Conditional(MagicExistsCondition.class)
 public class SgtPeppers implements CompactDisc{
 
